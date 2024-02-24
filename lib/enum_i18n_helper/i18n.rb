@@ -1,4 +1,4 @@
-module EnumI18nHelp
+module EnumI18nHelper
 
   module I18n
 
@@ -45,7 +45,7 @@ module EnumI18nHelp
       def #{attr_i18n_method_name}
         enum_label = self.send(:#{attr_name})
         if enum_label
-          ::EnumI18nHelp::Helper.translate_enum_label('#{klass}', :#{attr_name}, enum_label)
+          ::EnumI18nHelper::Helper.translate_enum_label('#{klass}', :#{attr_name}, enum_label)
         else
           nil
         end
@@ -60,7 +60,7 @@ module EnumI18nHelp
       klass.instance_eval <<-METHOD, __FILE__, __LINE__
       def #{collection_i18n_method_name}
         collection_array = #{collection_method_name}.collect do |label, _|
-          [label, ::EnumI18nHelp::Helper.translate_enum_label('#{klass}', :#{attr_name}, label)]
+          [label, ::EnumI18nHelper::Helper.translate_enum_label('#{klass}', :#{attr_name}, label)]
         end
         Hash[collection_array].with_indifferent_access
       end

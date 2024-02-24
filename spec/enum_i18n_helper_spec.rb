@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-EnumI18nHelp::Railtie.initializers.each(&:run)
+EnumI18nHelper::Railtie.initializers.each(&:run)
 
 class User < ActiveRecord::Base
   if ActiveRecord.version < Gem::Version.new('6.1')
@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   enum status: %i[normal disable]
 end
 
-RSpec.describe EnumI18nHelp::I18n do
+RSpec.describe EnumI18nHelper::I18n do
   describe '#enum' do
     context 'With hash definitions' do
       it 'responds defined _i18n method' do
