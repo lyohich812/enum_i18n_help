@@ -1,4 +1,4 @@
-# EnumI18nHelp
+# EnumI18nHelper
 
 Help ActiveRecord::Enum feature to work fine with I18n.
 
@@ -10,7 +10,7 @@ This gem can help you work fine with Enum and I18n
 
 Add this line to your application's Gemfile:
 
-    gem 'enum_i18n_help'
+    gem 'enum_i18n_helper'
 
 And then execute:
 
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install enum_i18n_help
+    $ gem install enum_i18n_helper
 
 ## Usage
 
@@ -78,11 +78,11 @@ When it is named with 'reference' and define enum in model file, there will be r
 
 ## Thanks
 
-Thanks for all the [contributors](https://github.com/lyohich812/enum_i18n_help/graphs/contributors).
+Thanks for all the [contributors](https://github.com/lyohich812/enum_i18n_helper/graphs/contributors).
 
 ## Contributing
 
-1. Fork it ( https://github.com/lyohich812/enum_i18n_help/fork )
+1. Fork it ( https://github.com/lyohich812/enum_i18n_helper/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Run test `rspec`
 4. Commit your changes (`git commit -am 'Add some feature'`)
